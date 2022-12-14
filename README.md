@@ -1,5 +1,5 @@
 # Minimal Theme
-你可以参考：
+您可以参考：
 
 [zhemglee.github.io](https://github.com/zhemglee/zhemglee.github.io)
 
