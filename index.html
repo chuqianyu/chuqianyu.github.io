@@ -34,7 +34,7 @@
         <div class="col-md-4 pt-4">
           <div class="fixed-posi">
 	   <div id="top-right">
-	        <a href="index.html"> 首页 </a>  | <a href="awardsandhonors.html">奖项与荣誉</a> | <a href="proj.html">项目经历</a> | <a href="pubs.html">论文与专利</a>  | <a href="index_en.html"> English </a>
+	        <a href="index.html"> 首页 </a>  | <a href="#awards">奖项与荣誉</a> | <a href="#publications">论文与专利</a> | <a href="#projects">项目经历</a>  | <a href="index_en.html"> English </a>
 	    </div>
             <div class="name pb-4">Zhemg Lee</div>
             <img src="./images/mes2.jpg" class="img-fluid profilepic" alt="Pratik profile photo" width="180">
@@ -362,7 +362,7 @@
               2017/09&nbsp;&nbsp;|&nbsp;&nbsp;<span class="papertitle">计算机二级&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;C语言程序设计 </span><br>
             </p>
 
-          <p class="header pt-5">所获奖项</p>
+          <div id = "awards"><p class="header pt-5">所获奖项</p></div>
             <p class="paper my-2 pl-3">
               2020/12&nbsp;&nbsp;|&nbsp;&nbsp;<span class="papertitle">第十七届“华为杯”中国研究生数学建模竞赛&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;国家级二等奖</span><br>
               2019/09&nbsp;&nbsp;|&nbsp;&nbsp;<span class="papertitle">第十五届挑战杯天津市大学生课外学术科技作品竞赛&emsp;&emsp;&emsp;&emsp;&emsp;天津市三等奖</span><br>
@@ -410,67 +410,8 @@
               2017/10&nbsp;&nbsp;|&nbsp;&nbsp;<span class="papertitle">天津工业大学校长一等奖学金</span><br>
             </p>
 
-          <p class="header pt-5">项目经历</p>
-            <div style="height:522px;overflow:auto;">
-                    <table>
-                        <col width="100px">
-                        <tr>
-                            <p class="paper my-2 pl-3">
-                              <span class="papertitle">深度学习中基于样本难度的加权策略的研究</span><br>
-                              Sep 2021 - Oct 2022<br>
-                              <b>项目角色：</b>深度学习任务中的赋权策略研究<br>
-                              <span class="bullet">--</span> 在DL样本加权优先模式上，除容易优先和难优先模式外，证明了<span class="thisauthor">中等难度优先和两端优先</span>的存在，丰富了样本赋权策略<br>
-                                <span class="bullet">--</span>  提出一种基于<span class="thisauthor">KL散度</span>的难度加权通用优化目标函数和一个灵活的数据驱动的赋权函数<span class="thisauthor">FlexW</span>函数，从而通过超参数的调节实现四种优先模式；FlexW函数在干净样本数据集、噪声样本数据集和不平衡样本数据集上均取得了良好的效果<br>
-                                <span class="bullet">--</span>  该方法应用于<span class="thisauthor">ResNet34</span>模型在CIFAR10和CIFAR100数据集的图像分类问题上，比Focal Loss和SPL分类准确率提高约5%；该方法应用于<span class="thisauthor">YOLOv4</span>模型在PASCAL VOC数据集上进行目标检测，准确率提高约2%
-                            </p>
-                        </tr>
-                        <tr>
-                            <p class="paper my-2 pl-3">
-                              <span class="papertitle">直肠癌淋巴结转移的智能诊断</span><br>
-                              Sep 2020 - Jun 2021<br>
-                              <b>项目角色：</b>CT影像分割和直肠癌转移预测<br>
-                                <span class="bullet">--</span> 辅助医生诊断，用<span class="thisauthor">GoogLeNet</span>从直肠癌CT影像中检测出是否存在肿瘤；进行肿瘤图像识别，识别正确率达到95.3%<br>
-                                <span class="bullet">--</span>  主要负责对原始图像数据进行<span class="thisauthor">图像增强</span>；并使用改进的<span class="thisauthor">U-Net</span>对CT影像进行图像分割，改进方案为：使用<span class="thisauthor">ResNet34</span>中的残差块代替卷积块，引入<span class="thisauthor">Squeeze-and-Excitation</span>注意力机制提高分割能力；在测试集上的 Dice指标为 92.7%<br>
-                                <span class="bullet">--</span>  采用<span class="thisauthor">LightGBM</span>算法对肿瘤影像特征与淋巴结转移进行相关性分析，最终对直肠癌淋巴结转移诊断准确率达到93.5%
-                            </p>
-                        </tr>
-                        <tr>
-                            <p class="paper my-2 pl-3">
-                              <span class="papertitle">基于YOLOv5n进行钢材表面缺陷检测任务</span><br>
-                              Aug 2021 - Jan 2022<br>
-                              <b>项目角色：</b>使用视觉算法对钢材表面缺陷进行检测<br>
-                              <span class="bullet">--</span> 辅助完成图像标注：使用labelme对钢材图像数据集进行标注和标签制作，并进行标签格式转换和脚本制作<br>
-                                <span class="bullet">--</span> 负责使用<span class="thisauthor">YOLOv5</span>目标检测器模型对钢材图像数据进行目标检测，在测试集上的检测准确率达到83.7%<br>
-                                <span class="bullet">--</span>  针对不同类别训练难度不同的情况，使用<span class="thisauthor">Focal Loss、多尺度训练</span>策略对YOLOv5模型改进；采用扩张编码和均匀匹配来实现模型轻量化<span class="thisauthor">YOLOv5n</span>，改进后模型训练速度比原模型提高2.5倍，最终在测试集上的检测准确率达到96.5%<br>
-                                <span class="bullet">--</span>  负责将<span class="thisauthor">YOLOv5n</span>模型转换到FP16，并将网络结构通过ONNX和OpenVINO部署到终端上
-                            </p>
-                        </tr>
-                        <tr>
-                            <p class="paper my-2 pl-3">
-                              <span class="papertitle">基于深度学习的信道均衡光计算优化算法研究</span>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="thisauthor">华为技术有限公司&nbsp;合作项目</span><br>
-                              Sep 2020 - Oct 2022<br>
-                              <b>项目角色：</b>光计算算法研究<br>
-                              <span class="bullet">--</span> 负责采用强化学习<span class="thisauthor">A3C</span>算法优化微环谐振器的时延带宽积，FWHM为50 GHz时，最大时延带宽积达到1503 ps•GHz<br>
-                                <span class="bullet">--</span> 负责光计算芯片的系统设计和仿真，通过<span class="thisauthor">NAdamWs</span>算法优化光计算芯片的参数，使接收端误码率低于判决阈值 (BER<3e-3，Q值 >8 dB)；对于<span class="thisauthor">RSOP</span>，旋转速率为5e6 rad/s的情况下，均衡后的信号Q值依然大于8 dB<br>
-                                <span class="bullet">--</span>  通过<span class="thisauthor">Bi-LSTM</span>算法训练光计算芯片，以快速响应光纤链路传输矩阵的变化，测试误差小于1e-3，响应速度小于10 ms<br>
-                                <span class="bullet">--</span>  辅助完成：通过MATLAB和VPI软件进行多芯强耦合光纤通信系统和少模强耦合光纤通信系统的仿真建模<br>
-                            </p>
-                        </tr>
-                        <tr>
-                            <p class="paper my-2 pl-3">
-                              <span class="papertitle">基于超表面的成像及图像处理系统</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;<span class="thisauthor">山河光电科技有限公司&nbsp;合作项目</span><br>
-                              Nov 2021 - Jun 2022<br>
-                              <b>项目角色：</b>用于深空卫星分类的光学衍射神经网络算法研究<br>
-                              <span class="bullet">--</span> 负责采用<span class="thisauthor">Pytorch</span>搭建神经网络对超表面的参数进行训练优化<br>
-                                <span class="bullet">--</span> 负责构建和训练通过光学前向传播连接的5层<span class="thisauthor">D<sup>2</sup>NN</span>算法；对MNIST手写数字集和Fashion-MNIST数据集分别实现了<span class="thisauthor">92.18%</span>和87.52%的识别准确率<br>
-                                <span class="bullet">--</span>  辅助完成：负责超构表面结构的光学衍射算法研究
-                            </p>
-                        </tr>
-                    </table>
-                </div>
 
-
-            <p class="header pt-5">论文著作</p>
+            <div id = "publications"><p class="header pt-5">论文著作</p></div> 
 <!--            <p class="paper my-2 pl-3">-->
 <!--              <span class="papertitle">TaxiNLI: Taking a Ride up the NLU Hill</span><br>-->
 <!--              Xiaoling Zhou, <span class="thisauthor">Zheng Li</span>, Ou Wu*<br>-->
@@ -627,6 +568,66 @@
             </p>
 
 
+
+           <div id = "projects"><p class="header pt-5">项目经历</p></div> 
+            <div style="height:522px;overflow:auto;">
+                    <table>
+                        <col width="100px">
+                        <tr>
+                            <p class="paper my-2 pl-3">
+                              <span class="papertitle">深度学习中基于样本难度的加权策略的研究</span><br>
+                              Sep 2021 - Oct 2022<br>
+                              <b>项目角色：</b>深度学习任务中的赋权策略研究<br>
+                              <span class="bullet">--</span> 在DL样本加权优先模式上，除容易优先和难优先模式外，证明了<span class="thisauthor">中等难度优先和两端优先</span>的存在，丰富了样本赋权策略<br>
+                                <span class="bullet">--</span>  提出一种基于<span class="thisauthor">KL散度</span>的难度加权通用优化目标函数和一个灵活的数据驱动的赋权函数<span class="thisauthor">FlexW</span>函数，从而通过超参数的调节实现四种优先模式；FlexW函数在干净样本数据集、噪声样本数据集和不平衡样本数据集上均取得了良好的效果<br>
+                                <span class="bullet">--</span>  该方法应用于<span class="thisauthor">ResNet34</span>模型在CIFAR10和CIFAR100数据集的图像分类问题上，比Focal Loss和SPL分类准确率提高约5%；该方法应用于<span class="thisauthor">YOLOv4</span>模型在PASCAL VOC数据集上进行目标检测，准确率提高约2%
+                            </p>
+                        </tr>
+                        <tr>
+                            <p class="paper my-2 pl-3">
+                              <span class="papertitle">直肠癌淋巴结转移的智能诊断</span><br>
+                              Sep 2020 - Jun 2021<br>
+                              <b>项目角色：</b>CT影像分割和直肠癌转移预测<br>
+                                <span class="bullet">--</span> 辅助医生诊断，用<span class="thisauthor">GoogLeNet</span>从直肠癌CT影像中检测出是否存在肿瘤；进行肿瘤图像识别，识别正确率达到95.3%<br>
+                                <span class="bullet">--</span>  主要负责对原始图像数据进行<span class="thisauthor">图像增强</span>；并使用改进的<span class="thisauthor">U-Net</span>对CT影像进行图像分割，改进方案为：使用<span class="thisauthor">ResNet34</span>中的残差块代替卷积块，引入<span class="thisauthor">Squeeze-and-Excitation</span>注意力机制提高分割能力；在测试集上的 Dice指标为 92.7%<br>
+                                <span class="bullet">--</span>  采用<span class="thisauthor">LightGBM</span>算法对肿瘤影像特征与淋巴结转移进行相关性分析，最终对直肠癌淋巴结转移诊断准确率达到93.5%
+                            </p>
+                        </tr>
+                        <tr>
+                            <p class="paper my-2 pl-3">
+                              <span class="papertitle">基于YOLOv5n进行钢材表面缺陷检测任务</span><br>
+                              Aug 2021 - Jan 2022<br>
+                              <b>项目角色：</b>使用视觉算法对钢材表面缺陷进行检测<br>
+                              <span class="bullet">--</span> 辅助完成图像标注：使用labelme对钢材图像数据集进行标注和标签制作，并进行标签格式转换和脚本制作<br>
+                                <span class="bullet">--</span> 负责使用<span class="thisauthor">YOLOv5</span>目标检测器模型对钢材图像数据进行目标检测，在测试集上的检测准确率达到83.7%<br>
+                                <span class="bullet">--</span>  针对不同类别训练难度不同的情况，使用<span class="thisauthor">Focal Loss、多尺度训练</span>策略对YOLOv5模型改进；采用扩张编码和均匀匹配来实现模型轻量化<span class="thisauthor">YOLOv5n</span>，改进后模型训练速度比原模型提高2.5倍，最终在测试集上的检测准确率达到96.5%<br>
+                                <span class="bullet">--</span>  负责将<span class="thisauthor">YOLOv5n</span>模型转换到FP16，并将网络结构通过ONNX和OpenVINO部署到终端上
+                            </p>
+                        </tr>
+                        <tr>
+                            <p class="paper my-2 pl-3">
+                              <span class="papertitle">基于深度学习的信道均衡光计算优化算法研究</span>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="thisauthor">华为技术有限公司&nbsp;合作项目</span><br>
+                              Sep 2020 - Oct 2022<br>
+                              <b>项目角色：</b>光计算算法研究<br>
+                              <span class="bullet">--</span> 负责采用强化学习<span class="thisauthor">A3C</span>算法优化微环谐振器的时延带宽积，FWHM为50 GHz时，最大时延带宽积达到1503 ps•GHz<br>
+                                <span class="bullet">--</span> 负责光计算芯片的系统设计和仿真，通过<span class="thisauthor">NAdamWs</span>算法优化光计算芯片的参数，使接收端误码率低于判决阈值 (BER<3e-3，Q值 >8 dB)；对于<span class="thisauthor">RSOP</span>，旋转速率为5e6 rad/s的情况下，均衡后的信号Q值依然大于8 dB<br>
+                                <span class="bullet">--</span>  通过<span class="thisauthor">Bi-LSTM</span>算法训练光计算芯片，以快速响应光纤链路传输矩阵的变化，测试误差小于1e-3，响应速度小于10 ms<br>
+                                <span class="bullet">--</span>  辅助完成：通过MATLAB和VPI软件进行多芯强耦合光纤通信系统和少模强耦合光纤通信系统的仿真建模<br>
+                            </p>
+                        </tr>
+                        <tr>
+                            <p class="paper my-2 pl-3">
+                              <span class="papertitle">基于超表面的成像及图像处理系统</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;<span class="thisauthor">山河光电科技有限公司&nbsp;合作项目</span><br>
+                              Nov 2021 - Jun 2022<br>
+                              <b>项目角色：</b>用于深空卫星分类的光学衍射神经网络算法研究<br>
+                              <span class="bullet">--</span> 负责采用<span class="thisauthor">Pytorch</span>搭建神经网络对超表面的参数进行训练优化<br>
+                                <span class="bullet">--</span> 负责构建和训练通过光学前向传播连接的5层<span class="thisauthor">D<sup>2</sup>NN</span>算法；对MNIST手写数字集和Fashion-MNIST数据集分别实现了<span class="thisauthor">92.18%</span>和87.52%的识别准确率<br>
+                                <span class="bullet">--</span>  辅助完成：负责超构表面结构的光学衍射算法研究
+                            </p>
+                        </tr>
+                    </table>
+                </div>
+		    
           <p class="header pt-5">校内科研项目经历</p>
             <p class="paper my-2 pl-3">
               <span class="papertitle">基于超表面的成像及图像处理系统</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<span class="thisauthor">山河光电科技有限公司&nbsp;合作项目</span><br>
