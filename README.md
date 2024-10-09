@@ -1,7 +1,7 @@
 # Minimal Theme
 您可以参考：
 
-[zhemglee.github.io](https://github.com/zhemglee/zhemglee.github.io)
+[chuqianyu.github.io](https://github.com/chuqianyu/chuqianyu.github.io)
 
 [pratikmjoshi.github.io](https://github.com/pratikmjoshi/pratikmjoshi.github.io)
 
